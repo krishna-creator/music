@@ -2,6 +2,7 @@ var start = null;
 var p=1;
 var content,n;
 window.onload=function(){
+alert('hi');
 content=document.getElementById("container");
 n=document.getElementsByTagName("span");
 n[p].style.background="#fff";
