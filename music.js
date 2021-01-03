@@ -41,10 +41,12 @@ content.addEventListener("touchend",function(event){
           }
       }
   }
+}
+window.onload=function(){
 //declaring variables
-var x,temp=0,condition=0,initial=0,status=0;
+var x,temp=0,condition=0,initial=0,status=0,p=0;
 //adding src values
-var img=['https://drive.google.com/uc?export=download&id=1eBaimEG6XWtT_eo80SIlyygjvcwZEfyz','https://drive.google.com/uc?export=download&id=1KvYTmEt6hVYLbSYUpQ7kUtHqRAP0lF6N','https://drive.google.com/uc?export=download&id=1YsjdeS0EFNI2Ok0V9kTbhUHfjjkBh-5G','https://drive.google.com/uc?export=download&id=1w3V_xJS9oYlqFogcEW95qiVyUSbxUSBh','https://drive.google.com/uc?export=download&id=1u05UxKXMxGHhh966ylowFHYQRfmPkW7n','https://drive.google.com/uc?export=download&id=1nJLL-ezyiX5wz0Ft_NS-E-TOSYkvdgX3','https://drive.google.com/uc?export=download&id=1GyW7Fey567TvxgS8ZTpQFtdJA2DTNp0W','https://drive.google.com/uc?export=download&id=13rydE5JhxUs-O5Qxh9X8GoPbez6d5Z6x','https://drive.google.com/uc?export=download&id=1jQctd7dfvViSwNFIAvjsKBnJIkhO_oCK','https://drive.google.com/uc?export=download&id=1m965REbn_giywcZfEE0KZxEeGCQ8_TiB','https://drive.google.com/uc?export=download&id=16KGqvddZnbvvisLMTfJIfV3QCyoMYC11','https://drive.google.com/uc?export=download&id=1jTUAJvUjEV1wNwWB5-3Rk8RagqpEyxfQ','https://drive.google.com/uc?export=download&id=14X-pTucYMs2QukR-J58SU4_7yceXRQ9T','https://drive.google.com/uc?export=download&id=1SlSWSbxQeY2FFxF8m2_rb8kh-J2XIoYX','https://drive.google.com/uc?export=download&id=1ZdKhH0pjsCaFamKePVJZTi52CLnAAd1E','https://drive.google.com/uc?export=download&id=14Zsnfwv3esSxId6JclGmkiiUYKDsYD_A','https://drive.google.com/uc?export=download&id=1m4lQyQ9PHsVcGbKS4mUnP9dz98utlPMx','https://drive.google.com/uc?export=download&id=1OgFuUwNSiWXj8cTpQ5TvMxgsVD2qlFfI','https://drive.google.com/uc?export=download&id=1WHmUs7Nm7Hjqi9uSiEWto4n9E56LNPBd','https://drive.google.com/uc?export=download&id=1_W1ye1I81ZCLwTXzcsYjzeSRedeZ5-FU','https://drive.google.com/uc?export=download&id=1rWtdw5GpT7skEw1a9YEia1TT6KwZ6Tsa','https://drive.google.com/uc?export=download&id=1Czm_wFw_mXUzMBDcA3n76rJmindJYwkT'];
+var img=['images/ignite.jpg','images/princess.jpg','images/dil1.jpg','images/dna3.jpg','images/attention.png','images/spring.jpg','images/cheap.png','images/pa.jpg','images/counting.jpg','images/tera.jpg','images/faded1.jpeg','images/despacito.png','images/boy.jpg','images/best.jpg','images/red.png','images/hum.jpg','images/psycho.png','images/pyramid.jpg','images/glati.jpg','images/spectre.jpg','images/beliver.jpg','https://drive.google.com/uc?export=download&id=1rWtdw5GpT7skEw1a9YEia1TT6KwZ6Tsa','https://drive.google.com/uc?export=download&id=1Czm_wFw_mXUzMBDcA3n76rJmindJYwkT'];
 //adding lyrics
 var lyrics=["Fireflies, a million little pieces<br>Feeds the dying light, and brings me back to life<br>In your eyes, I see something to believe in<br>Your hands are like a flame, your palms' the sweetest pain<br>Let the darkness lead us into the light<br>Let our dreams get lost, feel the temperature rise<br>Baby, tell me one more beautiful lie<br>One touch and I ignite<br>Like a starship speeding into the night<br>You and I get lost in the infinite lights<br>Baby, tell me one more beautiful lie<br>One touch and I ignite<br>One touch and I ignite<br>One touch and I ignite<br>So alive, your touch is like the daylight<br>Burning on my skin, it turns me on again<br>You and I, survivors of the same kind<br>But we're the only ones dancing on the sun<br>Let the darkness lead us into the light<br>Let our dreams get lost, feel the temperature rise<br>Baby, tell me one more beautiful lie<br>One touch and I ignite<br>Like a starship speeding into the night<br>You and I get lost in the infinite lights<br>Baby, tell me one more beautiful lie<br>One touch and I ignite<br>One touch and I ignite<br>One touch and I ignite<br>Diamonds are forever, but all we need is just tonight<br>We're monumental tremors that can freeze the speed of life<br>Just like particles that's falling from heaven all over the stars<br>Hear you calling for me, hear you calling me home from afar<br>Let the darkness lead us into the light<br>Let our dreams get lost, feel the temperature rise<br>Baby, tell me one more beautiful lie<br>One touch and I ignite<br>I feel the heat as we collide<br>Like a fever that feels so right<br>So baby, tell me one more beautiful lie<br>One touch and I ignite<br>One touch and I ignite<br>One touch and I ignite<br>One touch and I ignite<br>One touch and I ignite<br>One touch and I ignite",
 "Boys, they're handsome and strong<br>But always the first to tell me I'm wrong<br>Boys try to tame me, I know<br>They tell me I'm weird and won't let it go<br>No, I'm fine, I'm lying on the floor again<br>Cracked door, I always wanna let you in<br>Even after all of this shit, I'm resilient<br>'Cause a princess doesn't cry (no-oh)<br>A princess doesn't cry (no-oh, oh)<br>Over monsters in the night<br>Don't waste our precious time<br>On boys with pretty eyes<br>A princess doesn't cry (no-oh)<br>A princess doesn't cry (no-oh, oh)<br>Burning like a fire<br>You feel it all inside<br>But wipe your teary eyes<br>'Cause princesses don't cry<br>Don't cry, don't cry, oh<br>Don't cry<br>Don't cry, oh<br>Don't cry, don't cry, don't cry, oh<br>'Cause princesses don't cry<br>Girls, so pretty and poised<br>And soft to the touch<br>But God made me rough<br>Girls, so heavy the crown<br>They carry it tall<br>But it's weighing me down<br>No, I'm fine<br>I'm lying on the floor again<br>Cracked door<br>You're only going to let them in, once<br>And you won't come undone<br>'Cause a princess doesn't cry (no-oh)<br>A princess doesn't cry (no-oh, oh)<br>Over monsters in the night<br>Don't waste our precious time<br>On boys with pretty eyes<br>A princess doesn't cry (no-oh)<br>A princess doesn't cry (no-oh, oh)<br>Burning like a fire<br>You feel it all inside<br>But wipe your teary eyes<br>'Cause princesses don't cry<br>Don't cry, don't cry, oh<br>Don't cry<br>Don't cry, oh<br>Don't cry, don't cry, don't cry, oh<br>'Cause princesses don't cry<br>I'm fine, I won't waste my time<br>Keep it in a jar, gonna leave it for the next one<br>Yeah, I'm fine, I won't waste my time<br>Keep it in a jar, gonna leave it for the next one<br>Yeah, I'm fine<br>I'm lying on the floor again<br>'Cause a princess doesn't cry (no-oh)<br>A princess doesn't cry (no-oh, oh)<br>Over monsters in the night<br>Don't waste our precious time<br>On boys with pretty eyes<br>A princess doesn't cry (no-oh)<br>A princess doesn't cry (no-oh, oh)<br>Burning like a fire<br>You feel it all inside<br>But wipe your teary eyes<br>'Cause princesses don't cry<br>Don't cry, don't cry, oh<br>Don't cry<br>Don't cry, oh<br>Don't cry, don't cry, don't cry, oh<br>'Cause princesses don't cry<br>Don't cry, don't cry, oh<br>Don't cry<br>Don't cry, oh<br>Don't cry, don't cry, don't cry, oh<br>'Cause princesses don't cry",
@@ -73,9 +75,7 @@ var play=document.getElementById('play');
 var playchange=document.getElementById('triangle1');
 var label=document.getElementById('label');
 var previous=document.getElementById('previous');
-var next=document.getElementById('next');
-var pause1=document.getElementById('pause1');
-var pause2=document.getElementById('pause2');
+var next=document.getElementById('next')
 var back=document.getElementById('back');
 var circle=document.getElementById('circle');
 var word=document.getElementById('words');
@@ -118,10 +118,9 @@ function playsong(j){//controls all songs
     //changing the img of song
     circle.style.background = "url("+img[temp]+")";
     circle.style.backgroundSize="100% 100%";
-    //removing puase
-    pause1.classList.remove('pause1');
-    pause2.classList.remove('pause2');
-    playchange.classList.add('triangle');
+    //removing play
+    playchange.classList.add('pause');
+    playchange.classList.remove('triangle');
     //song duation time
     var endmin=Math.floor(aud[temp].duration/60);
     var endsec=Math.floor(aud[temp].duration-endmin*60);
@@ -154,9 +153,13 @@ function pp(){
             aud[temp].play();
             condition-=1;
         }
-        playchange.classList.toggle('triangle');
-        pause1.classList.toggle('pause1');
-        pause2.classList.toggle('pause2');
+    }
+    if(p==0){
+        p=1;
+    }
+    else{
+    playchange.classList.toggle('triangle');
+    playchange.classList.toggle('pause');
     }
 }
 function pl(){
