@@ -13,7 +13,7 @@ n[p].style.background="#fff";
   });
 content.addEventListener("touchend",function(event){
     var pos=100;
-    var offset = 100;//at least 80px to swipe
+    var offset = 80;//at least 80px to swipe
     if(start){
       //finger that hit the screen left
       var end = event.changedTouches.item(0).clientX;
