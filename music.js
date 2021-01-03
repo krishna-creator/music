@@ -42,7 +42,7 @@ content.addEventListener("touchend",function(event){
       }
   }
 //declaring variables
-var x,temp=0,condition=0,initial=0,status=0,p=0;
+var x,temp=0,condition=0,initial=0,status=0,pstatus=0;
 //adding src values
 var img=['images/ignite.jpg','images/princess.jpg','images/dil1.jpg','images/dna3.jpg','images/attention.png','images/spring.jpg','images/cheap.png','images/pa.jpg','images/counting.jpg','images/tera.jpg','images/faded1.jpeg','images/despacito.png','images/boy.jpg','images/best.jpg','images/red.png','images/hum.jpg','images/psycho.png','images/pyramid.jpg','images/glati.jpg','images/spectre.jpg','images/beliver.jpg','https://drive.google.com/uc?export=download&id=1rWtdw5GpT7skEw1a9YEia1TT6KwZ6Tsa','https://drive.google.com/uc?export=download&id=1Czm_wFw_mXUzMBDcA3n76rJmindJYwkT'];
 //adding lyrics
@@ -152,8 +152,8 @@ function pp(){
             condition-=1;
         }
     }
-    if(p==0){
-        p=1;
+    if(pstatus==0){
+        pstatus=1;
     }
     else{
     playchange.classList.toggle('triangle');
