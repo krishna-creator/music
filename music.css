@@ -134,7 +134,7 @@ body {
   position: absolute;
   width: 220px;
   height: 220px;
-  background: url("https://drive.google.com/uc?export=download&id=1eBaimEG6XWtT_eo80SIlyygjvcwZEfyz");
+  background: url("images/ignite.jpg");
   background-size: 100% 100%;
   border-radius: 50%;
   box-shadow: 0 0 10px 1px #666;
@@ -173,38 +173,22 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.4);
   bottom: 3px;
   left: 40%;
 }
 #triangle1 {
   position: absolute;
   content: "";
-  border-radius: 4px;
 }
 .triangle {
-  top: 13px;
-  left: 15px;
-  border-left: 25px solid rgba(255, 255, 255, 0.5);
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
+  width: 50px;
+  height: 50px;
+  background: url("https://img.icons8.com/flat_round/50/000000/play--v1.png");
 }
-.pause1 {
-  width: 10px;
-  height: 30px;
-  background: rgba(255, 255, 255, 0.5);
-  left: 8px;
-  position: absolute;
-  top: 10px;
-}
-.pause2 {
-  position: absolute;
-  top: 10px;
-  width: 10px;
-  height: 30px;
-  left: 28px;
-  background: rgba(255, 255, 255, 0.5);
+.pause {
+  width: 50px;
+  height: 50px;
+  background: url("https://img.icons8.com/flat_round/50/000000/pause--v1.png");
 }
 #previous {
   position: absolute;
