@@ -41,8 +41,6 @@ content.addEventListener("touchend",function(event){
           }
       }
   }
-}
-window.onload=function(){
 //declaring variables
 var x,temp=0,condition=0,initial=0,status=0,p=0;
 //adding src values
